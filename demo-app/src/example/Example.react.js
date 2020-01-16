@@ -12,9 +12,11 @@ import classNames from 'classnames';
 import * as React from 'react';
 
 const ExampleEnum = require('./Example$FbtEnum');
-
+const intlList = require('intlList');
 import fbt, {GenderConst, IntlVariations, IntlViewerContext, init} from 'fbt';
 init({translations: require('../translatedFbts.json')});
+
+console.log(intlList);
 
 const LOCALES = Object.freeze({
   en_US: Object.freeze({
